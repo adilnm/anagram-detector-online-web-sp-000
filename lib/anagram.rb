@@ -14,11 +14,16 @@ class Anagram
     
     result=@all.find_all{|i| i==@word}
     if result
+<<<<<<< HEAD
       result.collect do|x| 
       indx=@all.index(x)
       @all[indx]=""
       array[indx]
   end
+=======
+      result.collect  {|x| array[@all.index(x)]}
+  
+>>>>>>> c7b4982ca15865fca94cfcff134be2d8355477f0
   else
     []
   
